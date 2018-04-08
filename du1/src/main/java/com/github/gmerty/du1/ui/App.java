@@ -1,7 +1,7 @@
 package com.github.gmerty.du1.ui;
 
 import com.github.gmerty.du1.logika.*;
-import com.github.gmerty.du1.ui.*;
+//import com.github.gmerty.du1.ui.*;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

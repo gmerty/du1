@@ -19,6 +19,8 @@ public class HomeController implements Observer{
 	private Hra hra;
 	Random rand = new Random();
 	@FXML private Label vypis;
+	@FXML private Label spravnych;
+	@FXML private Label spatnych;
 	@FXML private Button bear;
 	@FXML private Button fox;
 	@FXML private Button hedgehog;
@@ -31,11 +33,19 @@ public class HomeController implements Observer{
 	public void inicializuj(Hra hra) {
 		this.hra = hra;
 		setBNonActive();
-		
+		spravnych.setText("Spravnych: "+hra.getspravnaOdpoved());
+		spatnych.setText("Spatnych: "+hra.getspatnaOdpoved());
+		pridejObservers();
+	}
+	
+	private void pridejObservers() {
+		hra.addObserver(this);
 	}
 
 	public void update(Observable arg0, Object arg1) {
-		setBNonActive();		
+		setBNonActive();
+		spravnych.setText("Spravnych: "+hra.getspravnaOdpoved());
+		spatnych.setText("Spatnych: "+hra.getspatnaOdpoved());
 	}
 	
 	public void bHadej() {

@@ -157,16 +157,42 @@
                            <children>
                               <Button fx:id="hadej" mnemonicParsing="false" onAction="#bHadej" prefHeight="258.4" prefWidth="56.0" text="Hadej" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                            </children>
-                        </AnchorPane>
+                      </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <Label fx:id="vypis" prefHeight="158.4" prefWidth="136.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           	<SplitPane dividerPositions="0.2578765645230902" prefHeight="50.2" prefWidth="928.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    			<items>
+                    		 	 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="100.0">
+                    	 	      <children>
+                    	 	         <Label fx:id="vypis" prefHeight="158.4" prefWidth="136.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     		      </children>
+                    		     </AnchorPane>
+                   	 		     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    		       <children>
+                    		       	<SplitPane dividerPositions="0.2578765645230902" prefHeight="50.2" prefWidth="928.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                   	  		         <items>
+                   	  		         	<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="100.0">
+                    	 	      			<children>
+                   	  		         			<Label fx:id="spatnych" prefHeight="158.4" prefWidth="136.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    		       			</children>
+                     		   			</AnchorPane>
+                     		   			<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="100.0">
+                    	 	      			<children>
+                   	  		         			<Label fx:id="spravnych" prefHeight="158.4" prefWidth="136.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                    		       			</children>
+                     		   			</AnchorPane>
+                   			   		 </items>
+                   			   		</SplitPane>
+                   			   	   </children>
+                   			   	  </AnchorPane>
+                   			   	  </items>
+                  			</SplitPane>
                            </children>
                         </AnchorPane>
                     </items>
                   </SplitPane>
                </children>
-            </AnchorPane>
+           </AnchorPane>
         </items>
       </SplitPane>
    </children>

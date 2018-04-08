@@ -1,6 +1,6 @@
-package com.github.gmerty.du1;
+package com.github.gmerty.du1.ui;
 
-import com.github.gmerty.adventura.ui.HomeController;
+import com.github.gmerty.du1.ui.HomeController;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,7 +21,7 @@ public class App extends javafx.application.Application
 	public void start(Stage arg0) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass()
-		          .getResource("Scene3.fxml"));
+		          .getResource("du2scene.fxml"));
 		Parent root = loader.load();
 
 		HomeController controller = loader.getController();		
